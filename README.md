@@ -2,7 +2,7 @@
 
 Disciplina: Programação Web
 
-Alunos: Luana Alves, Eduarda Costa, Erike
+Alunos: Luana Alves, Eduarda Costa, Erike (lider)
 
 Professor: Juliano Menzen
 
