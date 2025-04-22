@@ -9,13 +9,11 @@ body {
 .menu {
     border-top: 10px solid #009dff;
     border-bottom: 10px solid #0067a7;
-    padding-left: 40px;
 }
 
 a:link, a:visited {
     background-color: #0067a7;
     color: white;
-    float: center;
     padding-left: 55px;
     padding-top: 20px;
     padding-right: 55px;
@@ -30,7 +28,6 @@ a:link, a:visited {
   }
 
 /*Títulos h1*/
-
 h1 {
     text-align: center;
     font-size: 50px;
@@ -44,7 +41,7 @@ h2 {
 .container{
     position: relative;
     width: 1250px;
-    height: 350px;
+    height: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -52,16 +49,16 @@ h2 {
 .container-text{
     position: absolute;
     width: 600px;
-    height: 350px;
+    height: 320px;
     text-align: left;
-    align-content: center;
+    margin: auto;
 }
 
 .container-img{
     position: absolute;
     width: 600px;
-    height: 350px;
+    height: 320px;
     left: 650px;
     text-align: left;
-    align-content: center;
+    margin: auto;
 }
