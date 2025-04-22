@@ -43,7 +43,7 @@ h2 {
 
 .container{
     position: relative;
-    width: 1200px;
+    width: 1250px;
     height: 350px;
     margin-left: auto;
     margin-right: auto;
@@ -54,13 +54,14 @@ h2 {
     width: 600px;
     height: 350px;
     text-align: left;
-    align-content: baseline;
+    align-content: center;
 }
 
 .container-img{
     position: absolute;
     width: 600px;
     height: 350px;
-    left: 600px;
-    align-content: baseline;
+    left: 650px;
+    text-align: left;
+    align-content: center;
 }
