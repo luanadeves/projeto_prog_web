@@ -2,35 +2,34 @@
 body {
     font-family: 'PT Sans Caption', sans-serif;
     font-weight: bold;
-    background-color: #87CEFA;
+    background-color: #b4dcf5;
 }
 
 /* Navegação no topo da página*/
 .menu {
-    border-top: 10px solid #009dff;
-    border-bottom: 10px solid #0067a7;
+    overflow: hidden;
+    background-color: #0067a7;
 }
 
-a:link, a:visited {
+a{
     background-color: #0067a7;
     color: white;
-    padding-left: 55px;
-    padding-top: 20px;
-    padding-right: 55px;
-    padding-bottom: 20px;
+    padding: 20px 55px;
+    float: left;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-  }
+    display: block;
+}
 
-  a:hover, a:active {
+a:hover,a:active {
     background-color: #009dff;
-  }
+}
 
 /*Títulos h1*/
 h1 {
     text-align: center;
     font-size: 50px;
+    color: #0067a7;
 }
 
 h2 {
@@ -38,7 +37,7 @@ h2 {
     font-size: 25px;
 }
 
-.container{
+.container {
     position: relative;
     width: 1250px;
     height: 320px;
@@ -46,7 +45,7 @@ h2 {
     margin-right: auto;
 }
 
-.container-text{
+.container-text {
     position: absolute;
     width: 600px;
     height: 320px;
@@ -54,7 +53,7 @@ h2 {
     margin: auto;
 }
 
-.container-img{
+.container-img {
     position: absolute;
     width: 600px;
     height: 320px;
@@ -62,3 +61,13 @@ h2 {
     text-align: left;
     margin: auto;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0067a7;
+    color: white;
+    text-align: center;
+  }
