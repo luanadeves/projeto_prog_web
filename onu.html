@@ -4,13 +4,65 @@
 
 <head>
     <title>Indústria, Inovação e Infraestrutura</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="icon" type="image/svg" href="imagens/logo-index.svg">
+    <style>
+        /*Corpo do HTML*/
+        body {
+            background-color: #b4dcf5;
+        }
+
+        /* Navegação no topo da página*/
+        .menu {
+            overflow: hidden;
+            background-color: #0067a7;
+        }
+
+        a {
+            background-color: #0067a7;
+            color: white;
+            padding: 20px 100px;
+            float: left;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        a:hover,
+        a:active {
+            background-color: #009dff;
+        }
+
+        /*Títulos h1*/
+        h1 {
+            padding-top: 20px;
+            text-align: center;
+            font-size: 50px;
+            color: #0067a7;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #0067a7;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="menu container-fluid" id="navbar-container">
+    <nav>
+        <div class="menu">
             <a href="index.html">Página inicial</a>
             <a href="ods.html">O que é ODS?</a>
             <a href="onu.html" style="background-color: #009dff;">O que é a ONU?</a>
@@ -23,6 +75,20 @@
     <h1>
         O que é a Organização das Nações Unidas?
     </h1>
+
+    <div class="card" style="width: 18rem;">
+        <img src="imagens/1.0.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p style="padding-top: 10px;">Todos os direitos reservados. Autores do site: Luana Alves, Eduarda Costa e Erike Oliveira.</p>
+    </div>
 
 </body>
 
