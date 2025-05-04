@@ -20,7 +20,7 @@
             background-color: #0067a7;
         }
 
-        a {
+        nav a {
             background-color: #0067a7;
             color: white;
             padding: 20px 100px;
@@ -30,9 +30,14 @@
             display: block;
         }
 
-        a:hover,
-        a:active {
+        nav a:hover,
+        nav a:active {
             background-color: #009dff;
+        }
+
+        .card:hover,
+        .card:active {
+            cursor: pointer;
         }
 
         /*Títulos h1*/
@@ -46,6 +51,10 @@
         h2 {
             text-align: center;
             font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
         }
 
         .footer {
@@ -64,11 +73,8 @@
     <nav>
         <div class="menu">
             <a href="index.html">Página inicial</a>
-            <a href="ods.html">O que é ODS?</a>
+            <a href="ods.html">O que é ODS 9?</a>
             <a href="onu.html">O que é a ONU?</a>
-            <a href="ind.html" style="background-color: #009dff;">Indústria</a>
-            <a href="ino.html">Inovação</a>
-            <a href="inf.html">Infraestrutura</a>
         </div>
     </nav>
 
@@ -76,13 +82,105 @@
         Indústria
     </h1>
 
-    <h2>
-        Tópicos elencados pela ONU para contribuição na indústria
-    </h2>
+    <div class="container text-center" style="margin: auto; padding-top: 20px;">
+        <div class="row justify-content-center">
+            <div class="card" style="width: 15rem; height: 14rem;" class="col" onclick="toggle_modal()">
+                <img src="imagens/1.0.png" class="card-img-top" id="ind_1">
+            </div>
+
+            <div class="card" style="width: 15rem; height: 14rem;" class="col">
+                <img src="imagens/2.0.png" class="card-img-top">
+            </div>
+
+            <div class="card" style="width: 15rem; height: 14rem;" class="col">
+                <img src="imagens/3.0.png" class="card-img-top">
+            </div>
+
+            <div class="card" style="width: 15rem; height: 14rem;" class="col">
+                <img src="imagens/4.0.png" class="card-img-top" style="padding-top: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_1" style="display: none">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pirmeira evolução industrial</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="toggle_modal()">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_2" style="display: none">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pirmeira evolução industrial</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="toggle_modal()">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_3" style="display: none">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pirmeira evolução industrial</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="toggle_modal()">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_4" style="display: none">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pirmeira evolução industrial</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="toggle_modal()">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="footer">
-        <p style="padding-top: 10px;">Todos os direitos reservados. Autores do site: Luana Alves, Eduarda Costa e Erike Oliveira.</p>
+        <p style="padding-top: 10px;">Todos os direitos reservados. Autores do site: Luana Alves, Eduarda Costa e Erike
+            Oliveira.</p>
     </div>
 </body>
+
+<script>
+    function toggle_modal() {
+        var x = document.getElementById("modal_1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
 </html>
