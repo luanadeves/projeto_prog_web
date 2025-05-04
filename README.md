@@ -8,4 +8,4 @@ Professor: Juliano Menzen
 
 # Mapa do site
 
-![Mapa do site v0 1](https://github.com/user-attachments/assets/8d4862c7-fb10-4c81-8c08-67ae0ac31c78)
+![Mapa do site v0 1](https://github.com/luanadeves/projeto_prog_web/blob/main/imagens/mapa_site_atualizado.PNG)
