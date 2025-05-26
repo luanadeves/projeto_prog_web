@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<meta charset="UTF-8">
 
 <head>
+    <meta charset="UTF-8">
     <title>Indústria, Inovação e Infraestrutura</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="icon" type="image/svg" href="imagens/logo-index.svg">
     <style>
-        /*Corpo do HTML*/
         body {
             background-color: #b4dcf5;
         }
 
-        /* Navegação no topo da página*/
         .menu {
             overflow: hidden;
             background-color: #0067a7;
@@ -34,7 +32,6 @@
             background-color: #009dff;
         }
 
-        /*Títulos h1*/
         h1 {
             padding-top: 20px;
             text-align: center;
@@ -61,62 +58,76 @@
             color: white;
             text-align: center;
         }
+
+        .footer p {
+            padding-top: 10px;
+        }
+
+        section {
+            padding-bottom: 40px;
+        }
+
+        #col-text {
+            padding-top: 60px;
+        }
     </style>
 </head>
 
 <body>
-    <nav>
-        <div class="menu">
-            <a href="index.html">Página inicial</a>
-            <a href="ods.html">O que é ODS 9?</a>
-            <a href="onu.html" style="background-color: #009dff;">O que é a ONU?</a>
-        </div>
-    </nav>
 
-    <h1>
-        O que é a Organização das Nações Unidas?
-    </h1>
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html">Página inicial</a>
+                <a href="ods.html">O que é ODS 9?</a>
+                <a href="onu.html" style="background-color: #009dff;">O que é a ONU?</a>
+            </div>
+        </nav>
+    </header>
 
-    <div class="container-sm" style="padding-bottom: 40px;">
-        <div class="row justify-content-md-center">
-            <p>
-                A Organização das Nações Unidas (ONU) é uma entidade internacional fundada em 1945, com o objetivo de
-                promover a
-                paz, segurança, direitos humanos e o desenvolvimento sustentável no mundo. Reúne quase todos os países
-                do
-                planeta e atua por meio de diversas agências e programas em áreas como saúde, educação, meio ambiente,
-                economia
-                e assistência humanitária.<br>
-                Em 2015, a ONU lançou a Agenda 2030, composta por 17 Objetivos de Desenvolvimento Sustentável (ODS).
-                Esses
-                objetivos visam erradicar a pobreza, proteger o meio ambiente e garantir uma vida digna para todos até
-                2030
-            </p>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <figure>
-                            <h6><b>Clique na imagem para ir ao site oficial da ONU!</b></h6>
-                            <a href="https://brasil.un.org/pt-br"><img src="imagens/logo-onu.png" width="280px" height="180px"></a>
-                            <figcaption>Símbolo da Organização das Nações Unidas</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col" style="padding-top: 60px;">
-                        <p>
-                            O Brasil é um dos membros fundadores da ONU, e conta com representação fixa desse organismo
-                            em seu
-                            território desde 1947. Ao todo, 27 entidades ligadas à ONU desempenham atividades no país.
-                        </p>
+    <main>
+        <h1>O que é a Organização das Nações Unidas?</h1>
+
+        <section class="container-sm">
+            <div class="row justify-content-md-center">
+                <p>
+                    A Organização das Nações Unidas (ONU) é uma entidade internacional fundada em 1945, com o objetivo
+                    de
+                    promover a paz, segurança, direitos humanos e o desenvolvimento sustentável no mundo. Reúne quase
+                    todos os países do planeta e atua por meio de diversas agências e programas em áreas como saúde,
+                    educação, meio ambiente, economia e assistência humanitária.<br>
+                    Em 2015, a ONU lançou a Agenda 2030, composta por 17 Objetivos de Desenvolvimento Sustentável (ODS).
+                    Esses objetivos visam erradicar a pobreza, proteger o meio ambiente e garantir uma vida digna para
+                    todos até 2030.
+                </p>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <figure>
+                                <h6><b>Clique na imagem para ir ao site oficial da ONU!</b></h6>
+                                <a href="https://brasil.un.org/pt-br">
+                                    <img src="imagens/logo-onu.png" width="280px" height="180px">
+                                </a>
+                                <figcaption>Símbolo da Organização das Nações Unidas</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col" id="col-text">
+                            <p>
+                                O Brasil é um dos membros fundadores da ONU, e conta com representação fixa desse
+                                organismo em seu território desde 1947. Ao todo, 27 entidades ligadas à ONU desempenham
+                                atividades no país.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <div class="footer">
-        <p style="padding-top: 10px;">Todos os direitos reservados. Autores do site: Luana Alves, Eduarda Costa e Erike
+    <footer class="footer">
+        <p>Todos os direitos reservados. Autores do site: Luana Alves, Eduarda Costa e Erike
             Oliveira.</p>
-    </div>
+    </footer>
 
 </body>
 
