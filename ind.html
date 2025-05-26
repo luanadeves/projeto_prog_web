@@ -2,19 +2,16 @@
 <html lang="pt-br">
 <meta charset="UTF-8">
 
-
 <head>
     <title>Indústria, Inovação e Infraestrutura</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="icon" type="image/svg" href="imagens/logo-index.svg">
     <style>
-        /*Corpo do HTML*/
         body {
             background-color: #b4dcf5;
         }
 
-        /* Navegação no topo da página*/
         .menu {
             overflow: hidden;
             background-color: #0067a7;
@@ -40,7 +37,6 @@
             cursor: pointer;
         }
 
-        /*Títulos h1*/
         h1 {
             padding-top: 20px;
             text-align: center;
@@ -68,6 +64,10 @@
             text-align: center;
         }
 
+        .footer p{
+            padding-top: 10px;
+        }
+
         figure {
             border: 1px #cccccc solid;
             padding: 4px;
@@ -81,211 +81,251 @@
             padding: 2px;
             text-align: center;
         }
+
+        .card{
+            width: 15rem; 
+            height: 14rem;
+        }
+
+        .container text-center{
+            margin: auto; 
+            padding: 10px 0px 20px;
+        }
+
+        section{
+            padding-bottom: 20px;
+        }
+
+        .modal{
+            display: none;
+        }
     </style>
+</head>
 
 <body>
-    <nav>
-        <div class="menu">
-            <a href="index.html">Página inicial</a>
-            <a href="ods.html">O que é ODS 9?</a>
-            <a href="onu.html">O que é a ONU?</a>
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html">Página inicial</a>
+                <a href="ods.html">O que é ODS 9?</a>
+                <a href="onu.html">O que é a ONU?</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Indústria</h1>
+
+            <div class="container-sm">
+                <p>
+                    O ODS 9 busca o fortalecimento da indústria com foco na inovação tecnológica, sustentabilidade e
+                    infraestrutura robusta. Sua implementação vai desde a transição para a indústria 4.0 até a promoção
+                    de tecnologias limpas,
+                    alinhando o desenvolvimento econômico com responsabilidade social e ambiental. Está bastante ligada
+                    a <a href="ino.html">inovação.</a>
+                </p>
+                <p style="text-align: center;">
+                    Clique nos números abaixo para saber mais sobre cada evolução da indústria.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="card"
+                        onclick="document.getElementById('modal_1').style.display = 'block'">
+                        <img src="imagens/1.0.png" class="card-img-top">
+                    </div>
+
+                    <div class="card"
+                        onclick="document.getElementById('modal_2').style.display = 'block'">
+                        <img src="imagens/2.0.png" class="card-img-top">
+                    </div>
+
+                    <div class="card"
+                        onclick="document.getElementById('modal_3').style.display = 'block'">
+                        <img src="imagens/3.0.png" class="card-img-top">
+                    </div>
+
+                    <div class="card"
+                        onclick="document.getElementById('modal_4').style.display = 'block'">
+                        <img src="imagens/4.0.png" class="card-img-top" style="padding-top: 10px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-md">
+                <h2>Indústria 4.0</h2>
+                <p>
+                    A Indústria 4.0 traz automação, IoT, big data e inteligência artificial,
+                    enquanto a sustentabilidade se integra por meio de práticas como a economia circular e tecnologias
+                    de baixo
+                    carbono.<br>
+
+                    Soluções em prática:<br>
+                    ✅ Smart Grids: Redes elétricas inteligentes que integram energias renováveis.<br>
+                    ✅ Manufatura aditiva (impressão 3D): Reduz desperdício de materiais.<br>
+                    ✅ Digital Twins: Simulações que otimizam processos industriais (menos testes físicos).<br>
+                    ✅ Blockchain para rastreabilidade: Garante cadeias produtivas sustentáveis (ex.: café ou minérios
+                    "éticos").<br>
+                    ✅ Projetos como o Rota 2030 que incentivam a transição de indústrias brasileiras para a Indústria
+                    4.0, com foco em automação e eficiência energética.<br>
+                    ✅ O SENAI tem impulsionado parcerias com empresas para a implementação de soluções tecnológicas e
+                    sustentáveis.<br>
+                    ✅ Programas como o Movimento Brasil Mais Produtivo buscam tornar a produção mais eficiente e
+                    ambientalmente responsável.
+                </p>
+
+                <h2>Indústria 5.0 (Futuro)</h2>
+                <p>
+                    Em desenvolvimento, com foco em colaboração entre máquinas inteligentes e humanos, visando uma
+                    produção mais personalizada e sustentável.<br>
+                    ✅ Humanização e Sustentabilidade.<br>
+                    ✅ Colaboração homem-robô para reduzir excesso de produção.<br>
+                    ✅ Biofábricas: Uso de microrganismos para produzir materiais (ex.: couro de cogumelos).<br>
+                    ✅ Zero Waste: Sistemas de produção sem resíduos (ex.: Upcycling em larga escala).
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <!-- Modais das revoluções industriais -->
+            <div class="modal" tabindex="-1" id="modal_1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Primeira Revolução Industrial (Indústria 1.0)</h5>
+                            <button type="button" class="btn-close"
+                                onclick="document.getElementById('modal_1').style.display = 'none'"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <b>Período</b><br>
+                                🕒 Final do século XVIII até meados do século XIX<br>
+                                <b>Principais características</b><br>
+                                ✅ Uso do carvão e máquina a vapor para mecanização.<br>
+                                ✅ Surgimento das fábricas (antes a produção era artesanal).<br>
+                                ✅ Indústria têxtil e ferrovias como destaques.
+                            </p>
+                            <figure style="text-align: center;">
+                                <img src="imagens/1_rev_industrial.jpg" width="455px" height="250px"
+                                    alt="Primeira revolução industrial">
+                                <figcaption>Primeira revolução industrial - Fonte: Brasil Escola</figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                onclick="document.getElementById('modal_1').style.display = 'none'">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" tabindex="-1" id="modal_2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Segunda Revolução Industrial (Indústria 2.0)</h5>
+                            <button type="button" class="btn-close"
+                                onclick="document.getElementById('modal_2').style.display = 'none'"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <b>Período</b><br>
+                                🕒 Final do século XIX até início do século XX <br>
+                                <b>Principais características</b><br>
+                                ✅ Uso da eletricidade e petróleo como fontes de energia.<br>
+                                ✅ Produção em massa (linha de montagem, Fordismo).<br>
+                                ✅ Avanços como motor de combustão interna, telefone e produtos químicos.
+                            </p>
+                            <figure style="text-align: center;">
+                                <img src="imagens/2_rev_industrial.jpg" width="455px" height="250px"
+                                    alt="Segunda revolução industrial">
+                                <figcaption>Segunda revolução industrial - Fonte: PrePara ENEM</figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                onclick="document.getElementById('modal_2').style.display = 'none'">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" tabindex="-1" id="modal_3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Terceira Revolução Industrial (Indústria 3.0)</h5>
+                            <button type="button" class="btn-close"
+                                onclick="document.getElementById('modal_3').style.display = 'none'"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <b>Período</b><br>
+                                🕒 Décadas de 1960–2000<br>
+                                <b>Principais características</b><br>
+                                ✅ Automação com computadores e eletrônica.<br>
+                                ✅ Uso de robôs industriais e controle digital.<br>
+                                ✅ Surgimento da internet e TI (Tecnologia da Informação).
+                            </p>
+                            <figure style="text-align: center;">
+                                <img src="imagens/3_rev_industrial.jpg" width="455px" height="250px"
+                                    alt="Terceira revolução industrial">
+                                <figcaption>Terceira revolução industrial - Fonte: Escola Kids</figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                onclick="document.getElementById('modal_3').style.display = 'none'">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" tabindex="-1" id="modal_4">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Quarta Revolução Industrial (Indústria 4.0)</h5>
+                            <button type="button" class="btn-close"
+                                onclick="document.getElementById('modal_4').style.display = 'none'"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <b>Período</b><br>
+                                🕒 A partir de 2010 (em curso)<br>
+                                <b>Principais características</b><br>
+                                ✅ Sistemas ciber-físicos (IoT - Internet das Coisas)<br>
+                                ✅ Inteligência Artificial (IA) e Big Data.<br>
+                                ✅ Manufatura avançada (impressão 3D, robôs colaborativos).
+                            </p>
+                            <figure style="text-align: center;">
+                                <img src="imagens/4_rev_industrial.jpg" width="455px" height="250px"
+                                    alt="Quarta revolução industrial">
+                                <figcaption>Quarta revolução industrial - Fonte: Toda Matéria</figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                onclick="document.getElementById('modal_4').style.display = 'none'">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Todos os direitos reservados. Autores do site: Luana Alves, Eduarda Costa e
+                Erike Oliveira.</p>
         </div>
-    </nav>
-
-    <h1>
-        Indústria
-    </h1>
-
-    <div class="container-sm">
-        <p>
-            O ODS 9 busca o fortalecimento da indústria com foco na inovação tecnológica, sustentabilidade e
-            infraestruturarobusta. Sua implementação vai desde a transição para a indústria 4.0 até a promoção de tecnologias limpas,
-            alinhando o desenvolvimento econômico com responsabilidade social e ambiental. Está bastante ligada a <a href="ino.html">inovação.</a>
-        </p>
-        <p style="text-align: center;">
-            Clique nos números abaixo para saber mais sobre cada evolução da industria.
-        </p>
-    </div>
-
-    <div class="container text-center" style="margin: auto; padding: 10px 0px 20px;">
-        <div class="row justify-content-center">
-            <div class="card" style="width: 15rem; height: 14rem;" class="col"
-                onclick="document.getElementById('modal_1').style.display = 'block'">
-                <img src="imagens/1.0.png" class="card-img-top">
-            </div>
-
-            <div class="card" style="width: 15rem; height: 14rem;" class="col"
-                onclick="document.getElementById('modal_2').style.display = 'block'">
-                <img src="imagens/2.0.png" class="card-img-top">
-            </div>
-
-            <div class="card" style="width: 15rem; height: 14rem;" class="col"
-                onclick="document.getElementById('modal_3').style.display = 'block'">
-                <img src="imagens/3.0.png" class="card-img-top">
-            </div>
-
-            <div class="card" style="width: 15rem; height: 14rem;" class="col"
-                onclick="document.getElementById('modal_4').style.display = 'block'">
-                <img src="imagens/4.0.png" class="card-img-top" style="padding-top: 10px;">
-            </div>
-        </div>
-    </div>
-
-    <div class="container-md" style="padding-bottom: 50px;">
-        <h2>Indústria 4.0</h2>
-        <p>
-            A Indústria 4.0 traz automação, IoT, big data e inteligência artificial,
-            enquanto a sustentabilidade se integra por meio de práticas como a economia circular e tecnologias de baixo
-            carbono.<br>
-
-            Soluções em prática:<br>
-            ✅ Smart Grids: Redes elétricas inteligentes que integram energias renováveis.<br>
-            ✅ Manufatura aditiva (impressão 3D): Reduz desperdício de materiais.<br>
-            ✅ Digital Twins: Simulações que otimizam processos industriais (menos testes físicos).<br>
-            ✅ Blockchain para rastreabilidade: Garante cadeias produtivas sustentáveis (ex.: café ou minérios "éticos").<br>
-            ✅ Projetos como o Rota 2030 que incentivam a transição de indústrias brasileiras para a Indústria 4.0, com foco em automação e eficiência energética.<br>
-            ✅ O SENAI tem impulsionado parcerias com empresas para a implementação de soluções tecnológicas e sustentáveis.<br>
-            ✅ Programas como o Movimento Brasil Mais Produtivo buscam tornar a produção mais eficiente e ambientalmente responsável.
-        </p>
-
-        <h2>Indústria 5.0 (Futuro)</h2>
-        <p>
-            Em desenvolvimento, com foco em colaboração entre máquinas inteligentes e humanos, visando uma produção mais personalizada e sustentável.<br>
-            ✅ Humanização e Sustentabilidade.<br>
-            ✅ Colaboração homem-robô para reduzir excesso de produção.<br>
-            ✅ Biofábricas: Uso de microrganismos para produzir materiais (ex.: couro de cogumelos).<br>
-            ✅ Zero Waste: Sistemas de produção sem resíduos (ex.: Upcycling em larga escala).
-        </p>
-    </div>
-
-    <div class="modal" tabindex="-1" id="modal_1" style="display: none">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Primeira Revolução Industrial (Indústria 1.0)</h5>
-                    <button type="button" class="btn-close"
-                        onclick="document.getElementById('modal_1').style.display = 'none'"></button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        <b>Período</b><br>
-                        🕒 Final do século XVIII até meados do século XIX<br>
-                        <b>Principais características</b><br>
-                        ✅ Uso do carvão e máquina a vapor para mecanização.<br>
-                        ✅ Surgimento das fábricas (antes a produção era artesanal).<br>
-                        ✅ Indústria têxtil e ferrovias como destaques.
-                    </p>
-                    <figure style="text-align: center;">
-                        <img src="imagens/1_rev_industrial.jpg" width="455px" height="250px"
-                            alt="Primiera revolução industrial">
-                        <figcaption>Primeira revolução industrial- Fonte: Brasil Escola</figcaption>
-                    </figure>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"
-                        onclick="document.getElementById('modal_1').style.display = 'none'">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" tabindex="-1" id="modal_2" style="display: none">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Segunda Revolução Industrial (Indústria 2.0)</h5>
-                    <button type="button" class="btn-close"
-                        onclick="document.getElementById('modal_2').style.display = 'none'"></button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        <b>Período</b><br>
-                        🕒 Final do século XIX até início do século XX <br>
-                        <b>Principais características</b><br>
-                        ✅ Uso da eletricidade e petróleo como fontes de energia.<br>
-                        ✅ Produção em massa (linha de montagem, Fordismo).<br>
-                        ✅ Avanços como motor de combustão interna, telefone e produtos químicos.
-                    </p>
-                    <figure style="text-align: center;">
-                        <img src="imagens/2_rev_industrial.jpg" width="455px" height="250px"
-                            alt="Segunda revolução industrial">
-                        <figcaption>Segunda revolução industrial- Fonte: PrePara ENEM</figcaption>
-                    </figure>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"
-                        onclick="document.getElementById('modal_2').style.display = 'none'">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" tabindex="-1" id="modal_3" style="display: none">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Terceira Revolução Industrial (Indústria 3.0)</h5>
-                    <button type="button" class="btn-close"
-                        onclick="document.getElementById('modal_3').style.display = 'none'"></button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        <b>Período</b><br>
-                        🕒 Décadas de 1960–2000<br>
-                        <b>Principais características</b><br>
-                        ✅ Automação com computadores e eletrônica.<br>
-                        ✅ Uso de robôs industriais e controle digital.<br>
-                        ✅ Surgimento da internet e TI (Tecnologia da Informação).
-                    </p>
-                    <figure style="text-align: center;">
-                        <img src="imagens/3_rev_industrial.jpg" width="455px" height="250px"
-                            alt="Terceira revolução industrial">
-                        <figcaption>Terceira revolução industrial- Fonte: Escola Kids</figcaption>
-                    </figure>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"
-                        onclick="document.getElementById('modal_3').style.display = 'none'">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" tabindex="-1" id="modal_4" style="display: none">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Quarta Revolução Industrial (Indústria 4.0)</h5>
-                    <button type="button" class="btn-close"
-                        onclick="document.getElementById('modal_4').style.display = 'none'"></button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        <b>Período</b><br>
-                        🕒 A partir de 2010 (em curso)<br>
-                        <b>Principais características</b><br>
-                        ✅ Sistemas ciber-físicos (IoT - Internet das Coisas)<br>
-                        ✅ Inteligência Artificial (IA) e Big Data.<br>
-                        ✅ Manufatura avançada (impressão 3D, robôs colaborativos).
-                    </p>
-                    <figure style="text-align: center;">
-                        <img src="imagens/4_rev_industrial.jpg" width="455px" height="250px"
-                            alt="Quarta revolução industrial">
-                        <figcaption>Quarta revolução industrial- Fonte: Toda Matéria</figcaption>
-                    </figure>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"
-                        onclick="document.getElementById('modal_4').style.display = 'none'">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p style="padding-top: 10px;">Todos os direitos reservados. Autores do site: Luana Alves, Eduarda Costa e Erike
-            Oliveira.</p>
-    </div>
+    </footer>
 </body>
 
 </html>

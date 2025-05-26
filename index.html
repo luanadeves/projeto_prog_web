@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<meta charset="UTF-8">
-
 
 <head>
+    <meta charset="UTF-8">
     <title>Indústria, Inovação e Infraestrutura</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="icon" type="image/svg" href="imagens/logo-index.svg">
     <style>
-        /*Corpo do HTML*/
         body {
             background-color: #b4dcf5;
         }
 
-        /* Navegação no topo da página*/
+        /* Navegação no topo da página */
         .menu {
             overflow: hidden;
             background-color: #0067a7;
@@ -35,12 +33,11 @@
             background-color: #009dff;
         }
 
-        /*Títulos h1*/
         h1 {
             text-align: center;
             font-size: 50px;
             color: #0067a7;
-            padding-top: 20px;
+            padding-top: 10px;
         }
 
         h2 {
@@ -52,7 +49,7 @@
             font-size: 20px;
         }
 
-        .footer {
+        footer {
             position: fixed;
             left: 0;
             bottom: 0;
@@ -62,51 +59,81 @@
             color: white;
             text-align: center;
         }
+
+        footer p{
+            padding-top: 10px;
+        }
+
+        section{
+            justify-items: center;
+            margin-bottom: 100px;
+        }
+
+        .card{
+            width: 18rem;
+        }
+
+        img{
+            padding-top: 10px;
+        }
     </style>
+</head>
 
 <body>
-    <nav>
-        <div class="menu">
-            <a href="index.html" style="background-color: #009dff;">Página inicial</a>
-            <a href="ods.html">O que é ODS 9?</a>
-            <a href="onu.html">O que é a ONU?</a>
-        </div>
-    </nav>
-
-    <h1>
-        Indústria, Inovação e Infraestrutura
-    </h1>
-
-    <h2>
-        Conheça um pouco mais sobre esse objetivo de desenvolvimento sustentável feito pela ONU!
-    </h2>
-
-    <p style="text-align: center;">
-        Clique nas imagens abaixo para ir a página que deseja.
-    </p>
-
-    <div class="container text-center">
-        <div class="row justify-content-md-center">
-            <div class="card" style="width: 15rem; height: 17rem;" class="col">
-                <h2 style="padding-top: 10px;">Inovação</h2>
-                <a href="ino.html"><img src="imagens/inova_icon.png" class="card-img-top"></a>
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html" style="background-color: #009dff;">Página inicial</a>
+                <a href="ods.html">O que é ODS 9?</a>
+                <a href="onu.html">O que é a ONU?</a>
             </div>
+        </nav>
+    </header>
 
-            <div class="card" style="width: 15rem; height: 17rem;" class="col">
-                <h2 style="padding-top: 10px;">Infraestrutura</h2>
-                <a href="inf.html"><img src="imagens/infra_icon.png" class="card-img-top"></a>
+    <main>
+        <h1>Indústria, Inovação e Infraestrutura</h1>
+
+        <h2>
+            Conheça um pouco mais sobre esse objetivo de desenvolvimento sustentável feito pela ONU!
+        </h2>
+
+        <p style="text-align: center;">
+            Clique nas imagens abaixo para ir a página que deseja.
+        </p>
+
+        <section class="container text-center">
+            <div class="row justify-content-md-center">
+                <div class="card">
+                    <a href="ino.html"><img src="imagens/inova_icon.png" class="card-img-top"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Inovação</h5>
+                        <p class="card-text">Tecnologias emergentes e soluções sustentáveis para o século XXI </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="inf.html"><img src="imagens/infra_icon.png" class="card-img-top"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Infraestrutura</h5>
+                        <p class="card-text">Infraestruturas que promovem o crescimento inclusivo e resiliente</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="ind.html"><img src="imagens/indus_icon.png" class="card-img-top" style="padding-top: 50px;"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Indústria</h5>
+                        <p class="card-text">Eficiência produtiva e eliminação de resíduos</p>
+                    </div>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="card" style="width: 15rem; height: 17rem;" class="col">
-                <h2 style="padding-top: 10px;">Indústria</h2>
-                <a href="ind.html"><img src="imagens/indus_icon.png" class="card-img-top" style="padding-top: 50px;"></a>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p style="padding-top: 10px;">Todos os direitos reservados. Autores do site: Luana Alves, Eduarda Costa e Erike
+    <footer>
+        <p>Todos os direitos reservados. Autores do site: Luana Alves, Eduarda Costa e Erike
             Oliveira.</p>
-    </div>
+    </footer>
 </body>
 
 </html>
